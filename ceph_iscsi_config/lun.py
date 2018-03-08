@@ -620,8 +620,8 @@ class LUN(object):
 
         try:
             new_lun.set_attribute("cmd_time_out", 0)
-            new_lun.set_attribute("qfull_time_out",
-                                  settings.config.qfull_timeout)
+            #new_lun.set_attribute("qfull_time_out",
+            #                      settings.config.qfull_timeout)
         except RTSLibError as err:
             self.error = True
             self.error_msg = ("Could not set LIO device attribute "
